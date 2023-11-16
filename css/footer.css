@@ -1,0 +1,152 @@
+.footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    background-color:rgb(0, 0, 0);
+}
+
+.footer{
+    display: grid;
+    gap: 5px;
+    grid-template: 
+    "pie_izquierdo" auto
+    "pie_centro" auto
+    "pie_derecho" auto ;
+   
+}
+
+
+
+
+.pie_izquierdo{
+    grid-area: pie_izquierdo;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.pie_izquierdo .titulo1{
+    color: var(--color-botones-hover);
+    margin-bottom: 20px;
+}
+
+.pie_izquierdo ul li a{
+    color: var(--color-sombra);
+    text-decoration: none;
+    line-height: 1.7em;
+}
+
+.pie_izquierdo ul li a:hover{
+    color: var(--color-botones-hover);
+}
+
+
+.pie_centro{
+    grid-area: pie_centro;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.pie_centro .titulo2{
+    color: var(--color-botones-hover);
+    margin-bottom: 20px;
+}
+
+.pie_centro .texto{
+    color: var(--color-sombra);
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+.pie_centro .btn-cita:hover{
+    background-color: var(--color-botones-hover);
+}
+
+.pie_centro a:hover{
+    color: var(--color-botones-hover);
+}
+
+.pie_centro .btn-cita{
+    color: var(--color-texto);
+    background-color: var(--color-botones);
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+.pie_derecho{
+    grid-area: pie_derecho;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.pie_derecho .titulo3{
+    color: var(--color-botones-hover);
+    margin-bottom: 20px;
+}
+
+
+.pie_derecho .email{
+    color: var(--color-sombra);
+    margin-bottom: 20px;
+}
+
+.pie_derecho .web{
+    color: var(--color-sombra);
+    margin-bottom: 20px;
+}
+
+.pie_derecho .telefonos{
+    color: var(--color-sombra);
+}
+
+.pie_derecho .direccion{
+    color: var(--color-sombra);
+}
+
+.pie_derecho .ubicacion{
+    color: var(--color-sombra);
+}
+
+.pie_derecho .derechos{
+    color: var(--color-sombra);
+}
+
+.pie_centro a{
+    text-decoration: none;
+    list-style: none;
+    font-size: smaller;
+    color: var(--color-sombra);
+    margin-bottom: 20px;
+    line-height: 1em;
+}
+
+
+
+
+
+
+@media (min-width:934px){
+
+    .footer{
+        display: grid;
+        gap: 5px;
+        grid-template: 
+        "pie_izquierdo pie_centro pie_derecho" auto;
+       
+    }
+
+  
+    .pie_centro a{
+        text-decoration: none;
+        list-style: none;
+        font-size: smaller;
+        color: var(--color-sombra);
+        margin-bottom: 20px;
+        line-height: 1em;
+    }
+
+}

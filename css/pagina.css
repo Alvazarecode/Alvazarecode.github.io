@@ -1,0 +1,149 @@
+  /* PAGINA NORMAL */
+  *{
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+}
+
+    /*  DETALLES */
+
+    .detalles{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .titulobarra{
+        margin-top: 30px;
+        background-color: #015033;
+        padding: 20px 100px 20px ;
+        text-transform: uppercase;
+        color: aliceblue;
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+    
+    
+    .marco{
+        display: flex;
+    }
+    
+    .cabezal_a{
+        width: 40%;
+        padding: 20px 30px;
+    }
+    
+    .cabezal_b{
+        width: 60%;
+        padding: 20px 30px;
+    }
+    
+    .imagen_pagina{
+        width: 100%;
+        padding: 20px 20px;
+    }
+    
+    .titulotexto{
+       width: 100%; 
+       padding: 30px 20px;
+       color: rgb(99, 99, 101);
+       text-transform: uppercase;
+       font-size: 1.5em;
+    }
+    
+    .cabezal_b > p{
+        padding: 20px 20px;
+        color: rgb(105, 104, 104);
+    }
+
+    .cabezal_b >p > img{
+        padding: 20px 20px;
+        width: 100%;
+    }
+
+    .cabezal_a > p > img{
+        padding: 20px 20px;
+        width: 50%;
+    }
+    
+    .cabezal_a > p{
+        padding: 20px 20px;
+        color: rgb(105, 104, 104);
+    }
+
+
+    .cabezal_a .menuin{
+        list-style: none;
+        justify-content:space-around;
+        display: flex;
+        padding: 15px;
+    }
+
+    .cabezal_a  a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    .cabezal_a  a:hover{
+      font-weight: bold;
+    }
+
+    
+    
+    @media( max-width: 934px ){
+    
+        /*  DETALLES */
+
+        .detalles{
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .titulobarra{
+            padding: 20px 20px;
+        }
+
+        .imagen_pagina{
+            width: 100%;
+            padding: 20px 20px;
+        }
+    
+
+        .titulotexto{
+        width: 100%; 
+        padding: 20px auto;
+        color: rgb(60, 60, 61);
+        font-size: 1.1em;
+        font-weight:bold;
+        }
+
+        .cabezal_b > p{
+            padding: 20px 20px;
+        }
+
+        .marco{
+            display:block;
+        }
+
+        .cabezal_a{
+            width: 100%;
+        }
+
+        .cabezal_b{
+            width: 100%;
+        }
+
+        .cabezal_b >p > img{
+            width: 100%;
+        }
+    
+        .cabezal_a > p > img{
+            width: 100%;
+        }
+
+      
+    
+    }

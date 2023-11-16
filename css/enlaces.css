@@ -1,0 +1,106 @@
+:root{
+    --fondo-color: #ffffff;
+    --fondo-transparente:   hwb(34 53% 13% / 0);
+
+    --color-texto: #015033;
+    --color-titulo:  #015033;
+    --color-botones-hover:  rgb(229, 198, 44);
+    --color-botones:  rgba(236, 234, 234, 0.695);
+    --border-color: rgba(240, 248, 255, 0.684);
+    --color-barra:  #015033;
+
+    
+    --fuente:    'Mulish', sans-serif;
+    --fuente-size-normal:  1.1em;
+    --fuente-size-titulo:  1.2em;
+    --fuente-size-sub:  1.4em;
+    --fuente-texto-barra: 2em;
+    --fuente-size-peke:  0.95rem;
+   
+}
+
+.publix{
+    display: grid;
+    width: 60%;
+    margin: 0 auto ;
+    background-color: var(--fondo-transparente);
+    list-style: none;
+   margin-top: 50px;
+}
+
+.publix .enlaces > article{
+    overflow: hidden;
+}
+
+.publix .enlaces img:hover{
+ transform: scale(1.5);
+}
+
+.enlaces{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(auto , auto);
+    grid-auto-flow: dense;
+    gap: 3px;
+}
+
+
+.enlaces > article{
+    border-style: none;
+    padding: 2px;
+    text-align: center;
+}
+
+
+
+.enlaces  img{
+    width: 80%;
+    padding: 5px;
+    border-style: none;
+    object-fit:cover;
+    transition: 0.5s;
+}
+
+.publix .barra-enlaces{
+    font-family: var(--fuente);
+    height: 50px;
+    width: 100%;
+
+    background-color: var( --color-barra);
+    color: var(--fondo-color);
+    font-size: var( --fuente-texto-barra);
+    padding: 5px 5px;
+   text-align: center;
+    margin-bottom: 15px;
+}
+
+
+@media( max-width: 934px ){
+
+    .enlaces{
+        display: flex;
+    }
+
+    .enlaces{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      
+    }
+
+    .publix{
+        width: 100%; 
+    }
+
+    .enlaces img{
+        
+        width: 100%;
+        padding: 10px;
+        border-style: none;
+        object-fit:cover;
+    }
+
+ 
+    
+    
+
+}

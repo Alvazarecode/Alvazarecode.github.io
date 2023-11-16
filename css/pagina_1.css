@@ -1,0 +1,300 @@
+  /* PAGINA NORMAL */
+  :root{
+    --fondo-color: #ffffff;
+    --fondo-transparente:   hwb(34 53% 13% / 0);
+
+    --color-texto: rgb(71, 71, 71);
+    --color-titulo:  #015033;
+    --color-botones-hover:  rgb(229, 198, 44);
+    --color-botones:  rgba(236, 234, 234, 0.695);
+    --border-color: rgba(240, 248, 255, 0.684);
+    --color-footer:  rgb(54, 54, 54);
+    --color-sombra:  rgb(179, 177, 177);
+    --color-barra:  #015033;
+
+    
+    --fuente:    'Mulish', sans-serif;
+    --fuente-size-normal:  1.1em;
+    --fuente-size-titulo:  1.2em;
+    --fuente-size-sub:  1.4em;
+    --fuente-texto-barra: 2em;
+    --fuente-texto-barra2: 1.8em;
+    --fuente-size-peke:  0.95rem;
+   
+}
+
+*{
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+}
+    /*  DETALLES */
+
+    .detalles{
+        margin: 0 auto;
+        background-color: var(--fondo-color);
+    }
+
+    
+    .pagina{
+        width: 100%;
+        margin: 0 auto;
+        background-color: var(--fondo-color);
+    }
+
+    .titulobarra{
+        margin-top: 10px;
+        background-color: var(--color-barra);
+        padding: 10px 50px 10px ;
+        text-transform: uppercase;
+        color:var(--fondo-color);
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+
+  
+    .menuin{
+        display: grid;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+        padding: 10px;
+        line-height: 1.6em;
+        background-color: rgba(219, 216, 216, 0.851);
+        text-align: center;  
+    }
+
+    .listaformato{
+        margin-left: 40px;
+    }
+ 
+
+    .menuin a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        padding: 20px 10px;
+        color: black;
+    }
+
+    .menuin a:hover{
+      font-weight: bold;
+    }
+    
+
+
+
+
+    .marco{
+       margin: 0 auto;
+       height: 100%;
+    }
+
+
+    .marco .der{
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        padding: 10px 20px;
+    }
+
+    .marco  .subtitulo{
+       margin: 10px 20px;
+       text-transform:uppercase;
+       color: var(--color-titulo);
+       font-family: var(--fuente);
+       font-size: var(--fuente-texto-barra2);
+       font-weight: 900;
+
+    }
+
+    .marco  .subtitulo2{
+        margin: 10px 20px;
+        color:rgb(101, 101, 101);
+        font-family: var(--fuente);
+        font-size:1.7em;
+        font-weight: 900; 
+     }
+
+     .marco .subtitulo3{
+        margin: 10px;
+        color:rgb(19, 71, 14);
+        font-family: var(--fuente);
+        font-size:1.7em;
+        font-weight: 900; 
+    }
+
+    .marco  p{
+        text-align: justify;
+        padding: 10px 20px;
+    }
+
+    .imagen_pa{
+        padding-top: 2px;
+        width: 90%;
+    }
+    .imagen_pa2{
+        display: none;
+        visibility: hidden;
+    }
+
+    .li_img{
+        visibility: hidden;
+    }
+
+    .objeto{
+        visibility: visible;
+    }
+    
+  
+
+ 
+
+    .marco p > .img_parrafo{
+        width: 60%;
+    }
+    .marco p > .img_parrafo2{
+        width: 60%;
+    }
+
+
+    
+    .btn_basico{
+        display: flex;
+         font-size: 15px;
+         padding: 5px 10px;
+         border-radius: 5px;
+        border-color: rgba(255, 255, 255, 0);
+         background-color: rgb(229, 198, 44);
+     }
+     
+     .btn_basico:hover{
+         cursor: pointer;
+         background-color:var(--color-barra);
+         color: var(--fondo-color);
+     }
+    
+    .imagen_pagina{
+        width: 100%;
+        padding-top: 2px;
+    }
+
+    #matricula{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    
+    @media( min-width: 934px ){ /* PANTALLA GRANDE */
+    
+        /*  DETALLES */
+
+        .detalles{
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .titulobarra{
+            padding: 5px 30px ;
+        }
+
+    
+
+        .marco{
+            display:flex;
+            width: 70%;
+        }
+
+
+    .marco .der{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        padding: 10px 20px;
+    }
+    
+   
+    .menuin{
+        display:flex;
+        list-style: none;
+        padding: 10px;
+        width: 100%;
+        background-color: rgba(219, 216, 216, 0.851);
+        text-align: center;
+    }
+    
+
+
+    .btn_basico{
+        display: flex;
+         font-size: 15px;
+         padding: 5px 10px;
+         border-radius: 5px;
+        border-color: rgba(255, 255, 255, 0);
+        background-color: rgb(229, 198, 44);
+     }
+     
+     .btn_basico:hover{
+         cursor: pointer;
+         background-color:var(--color-barra);
+         color: var(--fondo-color);
+        
+     }
+  
+     .objeto{
+       display: none;
+    }
+    
+   
+
+
+    .imagen_pagina{
+        padding-top: 2px;
+        width: 100%;
+    }
+
+ 
+
+    .imagen_pa2{
+        display:block;
+        visibility: visible;
+        width: 100%;
+    }
+
+  
+
+  
+   
+    
+    
+    #img_proceso{
+        width: 50%;
+    }
+    #img_logito{
+        width: 10%;
+    }
+
+    #matricula{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+
+    .marco p > .img_parrafo{
+        width: 40%;
+    }
+    .marco p > .img_parrafo2{
+        width: 40%;
+    }
+
+
+    #tab{
+        background-color: rgb(243, 250, 250);
+        padding: 10px 70px;
+    }
+
+
+
+    }
