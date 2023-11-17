@@ -47,7 +47,7 @@
 
     .titulobarra{
         margin-top: 10px;
-        background-color: var(--color-barra);
+        background-color: #3a84df;
         padding: 10px 50px 10px ;
         text-transform: uppercase;
         color:var(--fondo-color);
