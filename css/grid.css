@@ -10,7 +10,7 @@
 }
 
 :root{
-    --fondo-color: #ffffff;
+    --fondo-color: #ffffff; /*Se crearon variables para los estilos*/
     --fondo-transparente:   hwb(34 53% 13% / 0);
 
     --color-texto: rgb(71, 71, 71);
