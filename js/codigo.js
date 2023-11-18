@@ -72,13 +72,6 @@ function prevSlider(){
     $('.slider li:nth-child('+imgPos+')').fadeIn();
 }
 
-
-
-
-
-
-
-
 })
 
 
