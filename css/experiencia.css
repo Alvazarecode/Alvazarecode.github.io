@@ -56,9 +56,7 @@ article{
    
 }
 
-.experiencia img:hover{
- 
-}
+
 
 .experiencia h2{
     font-family:var(--fuente);
@@ -193,14 +191,11 @@ article{
     visibility: hidden;
 }
 
-
 }
 
 
 
 @media (orientation: landscape) {
     
-   
-   
   
 }
