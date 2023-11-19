@@ -80,7 +80,7 @@ img{
     color: black;
 }
 
-@media( max-width: 934px ) { 
+@media( max-width: 934px ) { /*Ajustes del formulario para verse bien*/
 
     .form_register {
         width: auto;
