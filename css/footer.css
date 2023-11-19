@@ -1,71 +1,74 @@
-.footer{
+.footer {
     width: 100%;
     text-align: center;
     margin-top: 50px;
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
-.footer{
+.footer {
+    /*Establece el contenedor del pie de página como un contenedor de cuadrícula.*/
     display: grid;
     gap: 5px;
-    grid-template: 
-    "pie_izquierdo" auto
-    "pie_centro" auto
-    "pie_derecho" auto ;
-   
+    /*Define las áreas de la cuadrícula y su tamaño*/
+    grid-template:
+        "pie_izquierdo" auto "pie_centro" auto
+        "pie_derecho" auto;
+
 }
 
 
 
 
-.pie_izquierdo{
+.pie_izquierdo {
     grid-area: pie_izquierdo;
     margin: 0;
     margin-top: 40px;
 }
 
-.pie_izquierdo .titulo1{
+.pie_izquierdo .titulo1 {
+    /*Estiliza el primer título con un color específico y un margen inferior*/
     color: var(--color-botones-hover);
     margin-bottom: 20px;
 }
 
-.pie_izquierdo ul li a{
+.pie_izquierdo ul li a {
     color: var(--color-sombra);
     text-decoration: none;
     line-height: 1.7em;
 }
 
-.pie_izquierdo ul li a:hover{
+.pie_izquierdo ul li a:hover {
     color: var(--color-botones-hover);
 }
 
 
-.pie_centro{
+.pie_centro {
+    /*Coloca esta sección en el área designada en la cuadrícula.*/
     grid-area: pie_centro;
     margin: 0;
     margin-top: 40px;
 }
 
-.pie_centro .titulo2{
+.pie_centro .titulo2 {
     color: var(--color-botones-hover);
     margin-bottom: 20px;
 }
 
-.pie_centro .texto{
+.pie_centro .texto {
     color: var(--color-sombra);
     margin-bottom: 20px;
     line-height: 1.5em;
 }
 
-.pie_centro .btn-cita:hover{
+.pie_centro .btn-cita:hover {
     background-color: var(--color-botones-hover);
 }
 
-.pie_centro a:hover{
+.pie_centro a:hover {
     color: var(--color-botones-hover);
 }
 
-.pie_centro .btn-cita{
+.pie_centro .btn-cita {
     color: var(--color-texto);
     background-color: var(--color-botones);
     margin: 0 auto;
@@ -74,48 +77,49 @@
     margin-bottom: 20px;
 }
 
+    /*Asigna cada sección (pie_izquierdo, pie_centro, y pie_derecho) 
+    al área correspondiente definida en grid-template.*/
 
-
-.pie_derecho{
+.pie_derecho {
     grid-area: pie_derecho;
     margin: 0;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-.pie_derecho .titulo3{
+.pie_derecho .titulo3 {
     color: var(--color-botones-hover);
     margin-bottom: 20px;
 }
 
 
-.pie_derecho .email{
+.pie_derecho .email {
     color: var(--color-sombra);
     margin-bottom: 20px;
 }
 
-.pie_derecho .web{
+.pie_derecho .web {
     color: var(--color-sombra);
     margin-bottom: 20px;
 }
 
-.pie_derecho .telefonos{
+.pie_derecho .telefonos {
     color: var(--color-sombra);
 }
 
-.pie_derecho .direccion{
+.pie_derecho .direccion {
     color: var(--color-sombra);
 }
 
-.pie_derecho .ubicacion{
+.pie_derecho .ubicacion {
     color: var(--color-sombra);
 }
 
-.pie_derecho .derechos{
+.pie_derecho .derechos {
     color: var(--color-sombra);
 }
 
-.pie_centro a{
+.pie_centro a {
     text-decoration: none;
     list-style: none;
     font-size: smaller;
@@ -128,19 +132,21 @@
 
 
 
+/*Define una regla de medios que se aplica cuando la ventana tiene un ancho mínimo de 934 píxeles.*/
+@media (min-width:934px) { 
 
-@media (min-width:934px){
-
-    .footer{
+    .footer {
         display: grid;
         gap: 5px;
-        grid-template: 
-        "pie_izquierdo pie_centro pie_derecho" auto;
-       
+        grid-template:
+            "pie_izquierdo pie_centro pie_derecho" auto;
+
     }
 
-  
-    .pie_centro a{
+    /*Estos estilos se aplican específicamente a los enlaces 
+    dentro de la sección pie_centro cuando el ancho de la ventana es igual o superior a 934 píxeles.*/
+    
+    .pie_centro a { 
         text-decoration: none;
         list-style: none;
         font-size: smaller;

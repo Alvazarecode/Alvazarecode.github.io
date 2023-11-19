@@ -34,7 +34,7 @@
    
 }
 
-
+/*Restablece los valores de la pagina y se modifican*/
 *{
     margin: 0;
     top: 0;
@@ -56,13 +56,14 @@ body {
     min-height: 100%;
 }
 
+/*.grid-container > * se refiere a cualquier elemento hijo directo (*)*/
 
 .grid-container > * {
  background-color:var(--fondo-color);
 } 
 
 .header{
-    grid-area: header;
+    grid-area: header; /*Asigna la sección del encabezado al área llamada header en el contenedor de cuadrícula.*/
     margin: 0;
     top: 0;
     background-color: var(--color-barra);
@@ -72,7 +73,7 @@ body {
     grid-area: nav;
     background-color: var(--fondo-color);
     margin: 0;
-    top: 0;
+    top: 0; /* Elimina márgenes y establece la posición superior en 0.*/
 }
 
 
@@ -92,18 +93,21 @@ body {
     top: 0;
 }
 
+/*Establece el contenedor como un contenedor de cuadrícula. Esto significa que los elementos 
+    dentro de este contenedor se organizarán según las reglas de la cuadrícula de CSS.*/
+
 .grid-container{
     display: grid;
     gap: 5px;
     grid-template: 
-    "header" 50px
+    "header" 50px /*Filas ocupara una altura de 50 px*/
     "pagina" auto
     "footer" auto;
 }
 
 
 .float{
-	position:fixed;
+	position:fixed; /*Fija el elemento en una posición específica de la ventana del navegador.*/
 	width:40px;
 	height:40px;
 	bottom:40px;
@@ -115,7 +119,7 @@ body {
 	text-align:center;
   font-size:30px;
 	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+  z-index:100; /*Establece la posición del botón en el eje z (la profundidad en la pantalla).*/
 }
 .float:hover {
 	text-decoration: none;

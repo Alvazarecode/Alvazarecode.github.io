@@ -61,7 +61,7 @@
 
 
 .enlaces img {
-    width: 80%;
+    width: 80%; /*Establece el ancho de las imágenes al 80% del contenedor padre.*/
     padding: 5px;
     border-style: none;
     object-fit: cover;
