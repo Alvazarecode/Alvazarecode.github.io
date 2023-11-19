@@ -79,3 +79,23 @@ img{
     background-color: rgb(35, 187, 195);
     color: black;
 }
+
+@media( max-width: 934px ) { 
+
+    .form_register {
+        width: auto;
+        background: rgb(253, 253, 253);
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 10px;
+        font-family: 'Calibri';
+        color: rgb(0, 0, 0);
+        box-shadow: 7px 13px 37px #000;
+    }
+
+    .barra {
+        width: 100%;
+    }
+
+}
