@@ -127,14 +127,16 @@ body {
   background-color:#fff;
 }
 
+    /*Se refiere a cualquier elemento con la clase my-float.*/
+
 .my-float{
-	margin-top:6px;
+	margin-top: 6px;
 }
 
 
 @media (min-width:934px){
 .grid-container{
-    gap: 5px;
+    gap: 5px; /*dos columnas (header y pagina) y tres filas (header, pagina, y footer) con alturas específicas.*/
     grid-template: 
         "header header" 50px
         "pagina pagina" auto

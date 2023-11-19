@@ -18,8 +18,8 @@
 
 
 .topnav{
-    display: flex;
-    justify-content:space-between;
+    display: flex; /*Es responsable de toda la navegación el displey flex posiciona los archivos de forma horizontal*/
+    justify-content:space-between; /*Se para los archivos*/
     padding: 5px;
     max-width: 95%;
     margin: 0 auto;

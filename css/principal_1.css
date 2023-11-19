@@ -2,7 +2,8 @@
 .menu  a {
     text-decoration: none;
     color: var(--color-texto);
-    display: inline-block;
+    display: inline-block; /*Hace que los enlaces se muestren 
+    como bloques en línea, permitiendo que otros elementos fluyan al lado de ellos.*/
     position: relative;
 }
 
@@ -15,9 +16,9 @@
     bottom: 0;
     left: 0;
     background-color:#015033;
-    transform: scale(0);
+    transform: scale(0); /*Inicialmente, escala el pseudo-elemento horizontalmente a cero, haciéndolo invisible.*/
     transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out; /*Aplica una transición suave a la propiedad */
 }
 
 
