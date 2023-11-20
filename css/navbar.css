@@ -21,7 +21,7 @@
     display: flex; /*Es responsable de toda la navegación el displey flex posiciona los archivos de forma horizontal*/
     justify-content:space-between; /*Se para los archivos*/
     padding: 5px;
-    max-width: 95%;
+    max-width: 95%; /*Coloca los elementos, se parados*/
     margin: 0 auto;
 }
 
